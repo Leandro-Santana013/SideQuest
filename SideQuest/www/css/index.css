@@ -3,6 +3,11 @@
   --verde:#3cbc8c; 
 }
 
+.page-content {
+    overflow-y: auto !important;
+    overflow-x: hidden !important; 
+}
+
 body{
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -71,7 +76,7 @@ ul.t2 a{
     padding: 0.6vw;
     width: auto;
     height: auto;
-    border-radius: 10vw;
+    border-radius: 20px;
     background-color: #ffffff;
 }
 
@@ -89,8 +94,7 @@ ul.t2 a{
 .banner{
     display: flex;
     align-items: center;
-    width: 99vw;
-    margin-bottom: 30vw;
+    margin-bottom: 70px;
 }
 
 .img-banner{
@@ -124,6 +128,11 @@ ul.t2 a{
     -moz-box-shadow: -1px 10px 20px -4px rgba(0,0,0,0.48);
 }
 
+.content-input img {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
 .left-banner input{
     margin-left: 0.5vw;
     font-size: 0.99vw;
@@ -149,6 +158,7 @@ ul.t2 a{
     width: 7vw;
     height: 100%;
     border-radius: 0 10px 10px 0;
+    font-size: 1vw;
 }
 
 .left-banner input:focus{
@@ -157,7 +167,6 @@ ul.t2 a{
 }
 
 .left-banner h1{
-    font-family: 'Roboto Mono', monospace;
     color: black;
     width: 40vw;
     font-size: 3vw;
@@ -168,18 +177,31 @@ ul.t2 a{
     text-decoration: underline;
 }
 
+/*Animação */
 .animation1{
     display: flex;
-    gap: 7vw;
+    gap: 13vw;
     margin-bottom: 10vw;
+    justify-content: center;
+    align-items: center;
 }
+
 .hidden{
     display: flex;
     flex-direction: column;
     opacity: 0;
-    transform: translateX(+200%);
+    transform: translateX(+120%);
     transition: all 2s;
 }
+
+.card {
+    width: 15vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .show{
     display: flex;
     flex-direction: column;
@@ -190,13 +212,25 @@ ul.t2 a{
 }
 
 .show h2{
-display: flex;
-width: 15vw;
-flex-wrap: wrap;
+margin-top: 20px;
+width: 100%;
+text-align: center;
+font-size: 1.4vw;
+font-weight: 200;
 }
 
-.review{
-    width: 15vw;
+
+.review, .high-five {
+    width: 17vw;
+    height: 17vw;
+}
+
+.high-five {
+    margin-top: -45px;
+}
+
+.agenda {
+    width: 21vw;
     height: 15vw;
 }
 
@@ -204,7 +238,9 @@ flex-wrap: wrap;
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 10vw;
 }
+
 
 .poster{
     display: flex;
@@ -312,15 +348,15 @@ flex-wrap: wrap;
     transition-delay: 1100ms;
   }
 
-footer {
-    display: flex;
-    border-top: solid 1px var(--verde);
-}
+  
 
-.termos, .sobre {
+  .card-carrossel{
+    width: 17vw;
+    height: 24vw;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
 }
 
 .swiper {
@@ -337,9 +373,88 @@ footer {
     align-items: center;
   }
 
-  .swiper-slide img {
+  .swiper-slide .card-carrossel img {
     display: block;
+    border-radius:  10px 10px 0 0px;
     width: 100%;
-    height: 100%;
+    height: 15vw;
     object-fit: cover;
+    border-bottom: solid 3px var(--verde);
   }
+
+  .swiper-slide .card-carrossel p{
+    font-size: 1.3vw;
+  }
+
+  .swiper-slide .card-carrossel .btn-buscar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6vw;
+    width: 6vw;
+    height: 2vw;
+    border-radius: 10px;
+    background-color: var(--verde);
+    font-size: 1.3vw;
+  }
+
+  .swiper-slide .card-carrossel .btn-buscar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    margin-left: 20px; 
+    margin-bottom: 70px;
+}
+
+section h2 {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+section h2 strong {
+    color: var(--verde);
+}
+
+.carrossel{
+    display: flex;
+    justify-content: space-between;
+    gap: 17vw;
+}
+
+.left-carrossel{
+    width: 18vw;
+    border-left: solid 3px #757575;
+    padding-left: 9px;
+    height: 24vw;
+}
+
+.left-carrossel p {
+    font-size: 1.5vw;
+}
+
+footer {
+    display: flex;
+    border-top: solid 1px var(--verde);
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2vw;
+}
+
+.termos, .sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1.2vw;
+}
+
+footer img {
+    width: 8vw;
+    height: 3vw;
+}
+
+.termos a, .sobre a {
+    color: #000000;
+text-decoration: none;
+}

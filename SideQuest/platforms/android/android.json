@@ -4,36 +4,8 @@
     "uninstalled": []
   },
   "config_munge": {
-    "files": {
-      "res/xml/config.xml": {
-        "parents": {
-          "/*": [
-            {
-              "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
-              "count": 1
-            }
-          ]
-        }
-      }
-    }
+    "files": {}
   },
-  "installed_plugins": {
-    "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "br.com.SideQuest"
-    }
-  },
-  "dependent_plugins": {},
-  "modules": [
-    {
-      "id": "cordova-plugin-inappbrowser.inappbrowser",
-      "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-      "pluginId": "cordova-plugin-inappbrowser",
-      "clobbers": [
-        "cordova.InAppBrowser.open"
-      ]
-    }
-  ],
-  "plugin_metadata": {
-    "cordova-plugin-inappbrowser": "6.0.0"
-  }
+  "installed_plugins": {},
+  "dependent_plugins": {}
 }

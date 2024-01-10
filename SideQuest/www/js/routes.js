@@ -24,69 +24,18 @@ var app = new Framework7({
 	  on: {
 		pageBeforeIn: function (event, page) {
 		// fazer algo antes da página ser exibida
-	
-},
+		},
 		pageAfterIn: function (event, page) {
 		// fazer algo depois da página ser exibida
 		},
 		pageInit: function (event, page) {
-		// fazer algo quando a página for inicializada
-		$.getScript('js/index.js');
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
 
-    //SWIPER
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      autopplay: true,
-      delay: 3000,
-      loop: true,
-      breakpoints: {
-        50:{
-          slidesPerView: 1,
-          spaceBetween: 30
-        },
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 30
-        },
-        992:{
-          slidesPerView: 3,
-          spaceBetween: 30
-        },
-        1200:{
-          slidesPerView: 4,
-          spaceBetween: 30
-        },
-
-      }
-    });
-
-    var swiper2 = new Swiper(".categorias", {
-      slidesPerView: 3,
-      spaceBetween: 10,
-      freeMode: true,
-      breakpoints: {
-        50:{
-          slidesPerView: 3,
-          spaceBetween: 10
-        },
-        640: {
-          slidesPerView: 6,
-          spaceBetween: 10
-        },
-        992:{
-          slidesPerView: 8,
-          spaceBetween: 10
-        },
-        1200:{
-          slidesPerView: 12,
-          spaceBetween: 30
-        },
-
-      }
-    });
-  },
-
+      });
+		},
 		pageBeforeRemove: function (event, page) {
 		// fazer algo antes da página ser removida do DOM
 		},
@@ -114,25 +63,6 @@ var app = new Framework7({
     {
       path: '/link3/',
       url: 'link3.html',
-      animate: false,
-	  on: {
-		pageBeforeIn: function (event, page) {
-		// fazer algo antes da página ser exibida
-		},
-		pageAfterIn: function (event, page) {
-		// fazer algo depois da página ser exibida
-		},
-		pageInit: function (event, page) {
-		// fazer algo quando a página for inicializada
-		},
-		pageBeforeRemove: function (event, page) {
-		// fazer algo antes da página ser removida do DOM
-		},
-	  }
-    },
-    {
-      path: '/link4/',
-      url: 'link4.html',
       animate: false,
 	  on: {
 		pageBeforeIn: function (event, page) {
