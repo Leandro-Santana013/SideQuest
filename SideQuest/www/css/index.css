@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@600&display=swap');
 :root{
-  --verde:#3cbc8c; 
+  --verde:#3cbc8c;
+  --azul: #144474;
 }
 
 .page-content {
@@ -94,7 +95,7 @@ ul.t2 a{
 .banner{
     display: flex;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 4.166666666666667vw;
 }
 
 .img-banner{
@@ -226,7 +227,7 @@ font-weight: 200;
 }
 
 .high-five {
-    margin-top: -45px;
+    margin-top: -20px;
 }
 
 .agenda {
@@ -288,6 +289,11 @@ font-weight: 200;
     background-color: var(--verde);
     color: #ffffff;
     font-size: 1vw;
+    transition: 0.25s;
+}
+
+.encontrar-pro:hover{
+    background-color: var(--azul);
 }
 
 .hidden1:nth-child(1) .inner-img-ani1{
@@ -337,20 +343,20 @@ font-weight: 200;
     transition-delay: 1000ms;
   }
   
-  .hidden1 a{
+.hidden1 a{
     opacity: 0;
     transform: translateY(100%);
     transition: all 2s;
-  }
-  .show1 a{
+}
+.show1 a{
     opacity: 1;
     transform: translateY(0%);
     transition-delay: 1100ms;
-  }
+}
 
   
 
-  .card-carrossel{
+.card-carrossel{
     width: 17vw;
     height: 24vw;
     border-radius: 10px;
@@ -396,11 +402,60 @@ font-weight: 200;
     border-radius: 10px;
     background-color: var(--verde);
     font-size: 1.3vw;
+    transition: .25s ease-in-out;
+  }
+
+  .swiper-slide .card-carrossel .btn-buscar:hover{
+    background-color: var(--azul);
   }
 
   .swiper-slide .card-carrossel .btn-buscar a {
     color: #fff;
     text-decoration: none;
+}
+
+.btns-swipper{
+    display: flex;
+    margin-right: 3vw;
+    gap: 3vw;
+}
+
+.btn-swipper {
+    padding: 10px;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    transition: 0.35s ease-in-out;
+}
+
+.btn-swipper:hover {
+    background-color: #144474;
+    outline: none;
+    color: white;
+}
+
+.btn-swipper::after{
+    font-size: 1vw;
+}
+.swiper-button-next{
+    color: var(--verde);
+    outline: 1px solid var(--verde);
+    position: relative;
+}
+
+.swiper-button-prev {
+    color:  var(--verde);
+    background-color: transparent;
+    outline: 1px solid var(--verde);
+    outline-offset: -1px;
+    position: relative;
+
+}
+
+section .header-siwpper{ 
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 0.5vw;
 }
 
 section {
@@ -425,9 +480,16 @@ section h2 strong {
 
 .left-carrossel{
     width: 18vw;
-    border-left: solid 3px #757575;
     padding-left: 9px;
     height: 24vw;
+    display: flex;
+    gap: 2vw;
+}
+
+.left-carrossel .barra{
+    background-color: #757575;
+    width: 3px;
+    height: 100%;
 }
 
 .left-carrossel p {

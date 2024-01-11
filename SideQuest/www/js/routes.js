@@ -29,12 +29,66 @@ var app = new Framework7({
 		// fazer algo depois da página ser exibida
 		},
 		pageInit: function (event, page) {
-      var swiper = new Swiper(".mySwiper", {
+      var swiper1 = new Swiper("#carrossel1", {
         slidesPerView: 3,
         spaceBetween: 30,
+        rewind: true,
         freeMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+    var swiper2 = new Swiper("#carrossel2", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      rewind: true,
+      freeMode: true,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+  });
 
-      });
+  var swiper3 = new Swiper("#carrossel3", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      rewind: true,
+      freeMode: true,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+  });
+
+  var swiper4 = new Swiper("#carrossel4", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      rewind: true,
+      freeMode: true,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+  });
+
+  var swiper5 = new Swiper("#carrossel5", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      rewind: true,
+      freeMode: true,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+  });
+  
+  
+
+// Outros logs para verificar se o código está sendo executado
+console.log("Código de inicialização do Framework7");
+
+
 		},
 		pageBeforeRemove: function (event, page) {
 		// fazer algo antes da página ser removida do DOM
