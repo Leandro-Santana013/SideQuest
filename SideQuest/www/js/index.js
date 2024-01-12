@@ -70,9 +70,11 @@ function showCarrossel(carrosselNumber) {
   
     for (let i = 1; i <= 5; i++) {
         document.getElementById(`carrossel${i}`).style.display = 'none';
-        document.getElementById(`carrossel-btn${i}`).style.borderLeft = 'solid 3px #757575'
+        document.getElementById(`carrossel-btn${i}`).style.borderLeft = 'solid 3px #757575';
+        document.getElementById(`carrossel-palavra${i}`).style.color = 'black';
     }   
   
     document.getElementById(`carrossel${carrosselNumber}`).style.display = 'block';
-    document.getElementById(`carrossel-btn${carrosselNumber}`).style.borderLeft = 'solid 3px #3cbc8c'
+    document.getElementById(`carrossel-btn${carrosselNumber}`).style.borderLeft = 'solid 3px #3cbc8c';
+    document.getElementById(`carrossel-palavra${carrosselNumber}`).style.color = 'var(--verde)';
   }

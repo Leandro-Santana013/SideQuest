@@ -74,9 +74,8 @@ ul.t2 a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.6vw;
-    width: auto;
-    height: auto;
+    width: 6vw;
+    height: 2.5vw;
     border-radius: 20px;
     background-color: #ffffff;
 }
@@ -130,8 +129,9 @@ ul.t2 a{
 }
 
 .content-input img {
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2.3vw;
+    height: 2.3vw; 
+    margin-right: 7px;
 }
 
 .left-banner input{
@@ -143,10 +143,12 @@ ul.t2 a{
     width: 28vw;
     height: auto;
     border: none;
-    color: white;
-    background-color: white;
     border-radius: 10px 0 0 10px;
 } 
+
+.left-banner button:hover{
+    background-color: var(--azul);
+}
 
 .left-banner button{
     flex-grow: 1;
@@ -160,6 +162,7 @@ ul.t2 a{
     height: 100%;
     border-radius: 0 10px 10px 0;
     font-size: 1vw;
+    transition: all 0.5s ease;
 }
 
 .left-banner input:focus{
@@ -336,6 +339,7 @@ font-weight: 200;
     opacity: 1;
     transform: translateX(0%);
     transition-delay: 1000ms;
+    text-align: justify;
   }
   
 .hidden1 a{
@@ -389,10 +393,9 @@ font-weight: 200;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.6vw;
     width: 6vw;
-    height: 2vw;
-    border-radius: 10px;
+    height: 3vw;
+    border-radius: 6px;
     background-color: var(--verde);
     font-size: 1.3vw;
     transition: .25s ease-in-out;
@@ -445,23 +448,23 @@ font-weight: 200;
 
 }
 
-section .header-siwpper{ 
+section.swippers .header-siwpper{ 
     display: flex;
     justify-content: space-between; 
     margin-bottom: 0.5vw;
 }
 
-section {
+section.swippers {
     margin-left: 20px; 
     margin-bottom: 70px;
 }
 
-section h2 {
+section.swippers h2 {
     font-size: 2vw;
     font-weight: 700;
 }
 
-section h2 strong {
+section.swippers h2 strong {
     color: var(--verde);
 }
 
@@ -469,6 +472,7 @@ section h2 strong {
     display: flex;
     justify-content: space-between;
     gap: 17vw;
+    margin-bottom: 35px;
 }
 
 .left-carrossel{
@@ -489,12 +493,16 @@ section h2 strong {
     align-items: center;
     padding-left: 15px;
     border-left: solid 3px #757575;
-    height: 80px;
+    height: 5vw;
     transition: border-left 0.3s ease; 
 }
 
 #carrossel-btn1 {
     border-left: solid 3px var(--verde);
+}
+
+#carrossel-palavra1{
+    color: var(--verde);
 }
 
 footer {
@@ -503,6 +511,17 @@ footer {
     align-items: center;
     justify-content: space-around;
     margin-bottom: 2vw;
+}
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beneficios h3 {
+    font-size: 2vw;
+    margin-bottom: 20px;
 }
 
 .termos, .sobre {
