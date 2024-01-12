@@ -289,11 +289,6 @@ font-weight: 200;
     background-color: var(--verde);
     color: #ffffff;
     font-size: 1vw;
-    transition: 0.25s;
-}
-
-.encontrar-pro:hover{
-    background-color: var(--azul);
 }
 
 .hidden1:nth-child(1) .inner-img-ani1{
@@ -353,8 +348,6 @@ font-weight: 200;
     transform: translateY(0%);
     transition-delay: 1100ms;
 }
-
-  
 
 .card-carrossel{
     width: 17vw;
@@ -486,14 +479,22 @@ section h2 strong {
     gap: 2vw;
 }
 
-.left-carrossel .barra{
-    background-color: #757575;
-    width: 3px;
-    height: 100%;
-}
-
 .left-carrossel p {
     font-size: 1.5vw;
+    margin: 0;
+}
+
+.carrossel-btn {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-left: solid 3px #757575;
+    height: 80px;
+    transition: border-left 0.3s ease; 
+}
+
+#carrossel-btn1 {
+    border-left: solid 3px var(--verde);
 }
 
 footer {

@@ -59,41 +59,6 @@ const telaCarrossel = new IntersectionObserver((entradas) => {
 });
 
 
-function changeBarColorBasedOnCarrossel(carrosselId) {
-    const barra = document.querySelector('.barra');
-    
-    // Resetar a cor da barra
-    barra.style.backgroundImage = 'linear-gradient(to top, #3cbc8c 0%, #3cbc8c 0%)';
-    
-    // Adicionar lógica para mudar a cor com base no carrossel
-    switch (carrosselId) {
-        case 'carrossel1':
-            barra.style.backgroundImage = 'linear-gradient(to top, #3cbc8c 0%, #3cbc8c 25%, #ffffff 25%, #ffffff 100%)';
-            break;
-        case 'carrossel2':
-            
-            barra.style.backgroundImage = 'linear-gradient(to top, #3cbc8c 0%, #3cbc8c 50%, #ffffff 50%, #ffffff 100%)';
-            break;
-        case 'carrossel3':
-            barra.style.backgroundImage = 'linear-gradient(to top, #3cbc8c 0%, #3cbc8c 75%, #ffffff 75%, #ffffff 100%)';
-            break;
-        case 'carrossel4':
-            barra.style.backgroundImage = 'linear-gradient(to top, #3cbc8c 0%, #3cbc8c 100%, #ffffff 100%, #ffffff 100%)';
-            break;
-        case 'carrossel5':
-            barra.style.backgroundImage = 'linear-gradient(to top, #3cbc8c 0%, #3cbc8c 100%, #ffffff 100%, #ffffff 100%)';
-            break;
-        
-        default:
-            barra.style.backgroundImage = 'linear-gradient(to top, #3cbc8c 0%, #3cbc8c 0%)';
-    }
-}
-
-// Restante do código...
-
-
-
-
 
 const carrosseis = document.querySelectorAll('.swiper.mySwiper');
 carrosseis.forEach((carrossel) => telaCarrossel.observe(carrossel));
@@ -105,7 +70,9 @@ function showCarrossel(carrosselNumber) {
   
     for (let i = 1; i <= 5; i++) {
         document.getElementById(`carrossel${i}`).style.display = 'none';
+        document.getElementById(`carrossel-btn${i}`).style.borderLeft = 'solid 3px #757575'
     }   
   
     document.getElementById(`carrossel${carrosselNumber}`).style.display = 'block';
+    document.getElementById(`carrossel-btn${carrosselNumber}`).style.borderLeft = 'solid 3px #3cbc8c'
   }
