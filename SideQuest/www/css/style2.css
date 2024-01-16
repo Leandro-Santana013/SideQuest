@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@600&display=swap');
+
+:root {
+    --verde: #3cbc8c;
+    --azul: #144474;
+}
+
+.page-content {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+    overflow-x: hidden;
+    background: black;
+    color: black;
+}
+
+.side-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebarCliente {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 14px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+}
+
+.topo {
+    display: flex;
+    gap: 85vw;
+    margin-top: 20px;
+    height: 3vw;
+}
+
+.topo .img-logo {
+    width: 8vw;
+    height: 3vw;
+    margin-left: 3vw;
+}
+
+.notificacao i {
+    font-size: 30px;
+    color: #3cbc8c;
+    transition: 0.25s ease-in-out;
+}
+
+.notificacao i:hover {
+    color: #144474;
+}
+
+.sidebarCliente {
+    width: 250px;
+    border-right: solid 1px black;
+}
+
+.cuadrado {
+    width: 100vw;
+    height: 10vw;
+    background-color: #3cbc8c;
+}

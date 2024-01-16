@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>SideQuest</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/style2.css">
+    <!-- FONT AWESOME -->
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="homeCliente" class="page">
+                <link rel="stylesheet" href="css/style2.css">
+                <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="block">
+                            <header class="topo">
+                                <img class="img-logo" src="./img/logo_SideQuest.png" alt="Logo do SideQuest">
+                                <div class="notificacao">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                            </header>
+
+
+                            <div class="side-content">
+                            <div class="sidebarCliente">
+                                <div class="options">
+                                    <div class="option">
+                                        <i class="fa-solid fa-house"></i>
+                                        <p>Início</p>
+                                    </div>
+                                    <div class="option">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>Perfil</p>
+                                    </div>
+                                    <div class="option">
+                                        <i class="fa-regular fa-comments"></i>
+                                        <p>Chats</p>
+                                    </div>
+                                    <div class="option">
+                                        <i class="fa-regular fa-star"></i>
+                                        <p>Favoritos</p>
+                                    </div>
+                                    <div class="option">
+                                        <i class="fa-solid fa-clock-rotate-left"></i>
+                                        <p>Histórico</p>
+                                    </div>
+                                    <div class="option">
+                                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                                        <p>Pagamentos</p>
+                                    </div>
+                                </div>
+                                <div class="config">
+                                    <div class="option">
+                                        <i class="fa-solid fa-gear"></i>
+                                        <p>Configurações</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        
+                            <div class="actions">
+                                <div class="info-action">
+                                    <p>Adicionar serviço</p>
+                                    <div class="action">
+                                        <p>Publique um serviço e receba orçamentos</p>
+                                        <img src="./img/calendario.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Path to Framework7 Library Bundle JS-->
+        <script type="text/javascript" src="./lib/framework7-bundle.min.js"></script>
+        <!-- jQuery -->
+        <script type="text/javascript" src="./lib/jquery-3.7.0.min.js"></script>
+        <!-- Roteamento do app-->
+        <script type="text/javascript" src="./js/routes.js"></script>
+        <script src="cordova.js"></script>
+</body>
+
+</html>

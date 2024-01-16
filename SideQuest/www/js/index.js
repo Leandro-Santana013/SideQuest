@@ -48,21 +48,6 @@ const itens = document.querySelectorAll('.hidden1')
 itens.forEach((element) => tela1.observe(element))
 
 
-const telaCarrossel = new IntersectionObserver((entradas) => {
-    entradas.forEach((entry) => {
-        if (entry.isIntersecting) {
-            const carrosselId = entry.target.id;
-            console.log(`Carrossel visível: ${carrosselId}`);
-            changeBarColorBasedOnCarrossel(carrosselId);
-        }
-    });
-});
-
-
-
-const carrosseis = document.querySelectorAll('.swiper.mySwiper');
-carrosseis.forEach((carrossel) => telaCarrossel.observe(carrossel));
-
 
 
 function showCarrossel(carrosselNumber) {

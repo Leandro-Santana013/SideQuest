@@ -48,21 +48,6 @@ const itens = document.querySelectorAll('.hidden1')
 itens.forEach((element) => tela1.observe(element))
 
 
-const telaCarrossel = new IntersectionObserver((entradas) => {
-    entradas.forEach((entry) => {
-        if (entry.isIntersecting) {
-            const carrosselId = entry.target.id;
-            console.log(`Carrossel visível: ${carrosselId}`);
-            changeBarColorBasedOnCarrossel(carrosselId);
-        }
-    });
-});
-
-
-
-const carrosseis = document.querySelectorAll('.swiper.mySwiper');
-carrosseis.forEach((carrossel) => telaCarrossel.observe(carrossel));
-
 
 
 function showCarrossel(carrosselNumber) {
@@ -70,9 +55,11 @@ function showCarrossel(carrosselNumber) {
   
     for (let i = 1; i <= 5; i++) {
         document.getElementById(`carrossel${i}`).style.display = 'none';
-        document.getElementById(`carrossel-btn${i}`).style.borderLeft = 'solid 3px #757575'
+        document.getElementById(`carrossel-btn${i}`).style.borderLeft = 'solid 3px #757575';
+        document.getElementById(`carrossel-palavra${i}`).style.color = 'black';
     }   
   
     document.getElementById(`carrossel${carrosselNumber}`).style.display = 'block';
-    document.getElementById(`carrossel-btn${carrosselNumber}`).style.borderLeft = 'solid 3px #3cbc8c'
+    document.getElementById(`carrossel-btn${carrosselNumber}`).style.borderLeft = 'solid 3px #3cbc8c';
+    document.getElementById(`carrossel-palavra${carrosselNumber}`).style.color = 'var(--verde)';
   }

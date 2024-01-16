@@ -557,25 +557,3 @@ footer img {
     color: #000000;
     text-decoration: none;
 }
-
-
-/*pagina cliente*/
-
-.sidebarCliente {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100%;
-}
-
-.options {
-    display: flex;
-    flex-direction: column;
-}
-
-.option {
-    display: flex;
-    flex-direction: row;
-    gap: 1vw;
-    align-items: center;
-}
