@@ -21,60 +21,57 @@
 <body>
     <!-- App root element -->
     <div id="app">
-
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
-            <!-- Initial Page, "data-name" contains page name -->
+        <!-- Initial Page, "data-name" contains page name -->
             <div data-name="homeCliente" class="page">
                 <link rel="stylesheet" href="css/style2.css">
+                    <!-- FONT AWESOME -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+                <header>
+                    <img class="img-logo" src="./img/logo_SideQuest.png" alt="Logo do SideQuest">
+                    <div class="notificacao">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                </header>
+                <nav class="sidebarCliente">
+                    <div class="options">
+                        <div class="option">
+                            <i class="fa-solid fa-house"></i>
+                            <p>Início</p>
+                        </div>
+                        <div class="option">
+                            <i class="fa-regular fa-user"></i>
+                            <p>Perfil</p>
+                        </div>
+                        <div class="option">
+                            <i class="fa-regular fa-comments"></i>
+                            <p>Chats</p>
+                        </div>
+                        <div class="option">
+                            <i class="fa-regular fa-star"></i>
+                            <p>Favoritos</p>
+                        </div>
+                        <div class="option">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <p>Histórico</p>
+                        </div>
+                        <div class="option">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            <p>Pagamentos</p>
+                        </div>
+                    </div>
+                    <div class="config">
+                        <div class="option">
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Configurações</p>
+                        </div>
+                    </div>
+                </nav>
                 <!-- Scrollable page content -->
                     <div class="page-content">
-                        <div class="block">
-                            <header class="topo">
-                                <img class="img-logo" src="./img/logo_SideQuest.png" alt="Logo do SideQuest">
-                                <div class="notificacao">
-                                    <i class="fa-solid fa-bell"></i>
-                                </div>
-                            </header>
-
-
-                            <div class="side-content">
-                            <div class="sidebarCliente">
-                                <div class="options">
-                                    <div class="option">
-                                        <i class="fa-solid fa-house"></i>
-                                        <p>Início</p>
-                                    </div>
-                                    <div class="option">
-                                        <i class="fa-regular fa-user"></i>
-                                        <p>Perfil</p>
-                                    </div>
-                                    <div class="option">
-                                        <i class="fa-regular fa-comments"></i>
-                                        <p>Chats</p>
-                                    </div>
-                                    <div class="option">
-                                        <i class="fa-regular fa-star"></i>
-                                        <p>Favoritos</p>
-                                    </div>
-                                    <div class="option">
-                                        <i class="fa-solid fa-clock-rotate-left"></i>
-                                        <p>Histórico</p>
-                                    </div>
-                                    <div class="option">
-                                        <i class="fa-solid fa-hand-holding-dollar"></i>
-                                        <p>Pagamentos</p>
-                                    </div>
-                                </div>
-                                <div class="config">
-                                    <div class="option">
-                                        <i class="fa-solid fa-gear"></i>
-                                        <p>Configurações</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        
+                            <div class="menu-profissionais">
+                        <div class="menu-topo">
                             <div class="actions">
                                 <div class="info-action">
                                     <p>Adicionar serviço</p>
@@ -85,13 +82,45 @@
                                 </div>
                             </div>
 
+                            <div class="actions">
+                                <div class="info-action">
+                                    <p>Adicionar serviço</p>
+                                    <div class="action">
+                                        <p>Publique um serviço e receba orçamentos</p>
+                                        <img src="./img/calendario.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="actions">
+                                <div class="info-action">
+                                    <p>Adicionar serviço</p>
+                                    <div class="action">
+                                        <p>Publique um serviço e receba orçamentos</p>
+                                        <img src="./img/calendario.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1>Encontre os melhores profissionais para seu problema</h1>
+                        
+
+                        <div class="input-filtros">
+                            <div class="content-input">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" placeholder="busque por serviços"/>
+                              </div>
+                              <div class="filtros"><p>Filtros</p>
+                                <i class="fa-solid fa-sliders"></i>   
+                            </div>
+                        </div>
+                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
 
 
         <!-- Path to Framework7 Library Bundle JS-->

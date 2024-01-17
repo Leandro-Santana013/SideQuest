@@ -18,7 +18,7 @@ body {
     border: 0;
     display: flex;
     width: 100%;
-    background-color: white;
+    height: 100%;
     flex-direction: column;
     overflow-x: hidden;
 }
@@ -116,20 +116,26 @@ ul.t2 a {
     justify-content: flex-start;
 }
 
-.content-input {
-    padding-left: 0.3vw;
-    margin-top: 8vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32vw;
-    height: 3vw;
-    border: solid 1px #144474;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: -1px 10px 20px -4px rgba(0, 0, 0, 0.48);
-    -webkit-box-shadow: -1px 10px 20px -4px rgba(0, 0, 0, 0.48);
-    -moz-box-shadow: -1px 10px 20px -4px rgba(0, 0, 0, 0.48);
-}
+.banner .content-input i{
+    color: var(--verde);
+    font-size: 1.4vw;
+    margin-left: 5px;
+} 
+
+    .banner .content-input {
+        padding-left: 0.3vw;
+        margin-top: 8vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32vw;
+        height: 3vw;
+        border: solid 1px #144474;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: -1px 10px 20px -4px rgba(0, 0, 0, 0.48);
+        -webkit-box-shadow: -1px 10px 20px -4px rgba(0, 0, 0, 0.48);
+        -moz-box-shadow: -1px 10px 20px -4px rgba(0, 0, 0, 0.48);
+    }
 
 .content-input img {
     width: 2.3vw;
@@ -146,7 +152,6 @@ ul.t2 a {
     width: 28vw;
     height: auto;
     border: none;
-    border-radius: 10px 0 0 10px;
 }
 
 .left-banner button:hover {
