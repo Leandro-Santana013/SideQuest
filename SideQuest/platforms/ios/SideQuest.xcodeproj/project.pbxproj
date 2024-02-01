@@ -16,10 +16,10 @@
 		4E7CA2B6272ABB0D00177EF9 /* config.xml in Copy Staging Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 		4E7CA2B7272ABB0D00177EF9 /* www in Copy Staging Resources */ = {isa = PBXBuildFile; fileRef = 301BF56E109A69640062928A /* www */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		5E762EC6D39B45808B98ED4A /* CDVInAppBrowserOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = E15C00D67BEA4F4A80A537DF /* CDVInAppBrowserOptions.m */; };
-		ACE4D75FB9014136BB90B4C2 /* CDVInAppBrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E5759D92274D03BAFB21BF /* CDVInAppBrowserNavigationController.m */; };
-		E4320A01AFBE4D14BEB4836D /* CDVWKInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = C65BD5B9374F4831B4331B73 /* CDVWKInAppBrowser.m */; };
-		11891F2078284B6C92D3AB30 /* CDVWKInAppBrowserUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D159D3F0947E4B138C92C50E /* CDVWKInAppBrowserUIDelegate.m */; };
+		B8549E6C48D14C1A88487F83 /* CDVInAppBrowserOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = C0185B1438EB40DAB135FBCD /* CDVInAppBrowserOptions.m */; };
+		7E52A1EDC53D4996800B9450 /* CDVInAppBrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88C86A7CC58417D9285276F /* CDVInAppBrowserNavigationController.m */; };
+		AB2F67A0CB9E492181F93FFA /* CDVWKInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6043E2C96D8C4A2A9246A3AF /* CDVWKInAppBrowser.m */; };
+		0E008A1FE69C4CB0BE72BEF8 /* CDVWKInAppBrowserUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60630D7CE0D3454FA9DBAA13 /* CDVWKInAppBrowserUIDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,14 +82,14 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "SideQuest/config.xml"; sourceTree = "<group>"; };
-		E15C00D67BEA4F4A80A537DF /* CDVInAppBrowserOptions.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		73E5759D92274D03BAFB21BF /* CDVInAppBrowserNavigationController.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserNavigationController.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		C65BD5B9374F4831B4331B73 /* CDVWKInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVWKInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		D159D3F0947E4B138C92C50E /* CDVWKInAppBrowserUIDelegate.m */ = {isa = PBXFileReference; name = "CDVWKInAppBrowserUIDelegate.m"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		404EEBD1302645058835B704 /* CDVInAppBrowserOptions.h */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		7D040AAB7E0F4915B38DAC3A /* CDVInAppBrowserNavigationController.h */ = {isa = PBXFileReference; name = "CDVInAppBrowserNavigationController.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		D335DE0E202E40D8B83748E4 /* CDVWKInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVWKInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		4320894849084870951CFE24 /* CDVWKInAppBrowserUIDelegate.h */ = {isa = PBXFileReference; name = "CDVWKInAppBrowserUIDelegate.h"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C0185B1438EB40DAB135FBCD /* CDVInAppBrowserOptions.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B88C86A7CC58417D9285276F /* CDVInAppBrowserNavigationController.m */ = {isa = PBXFileReference; name = "CDVInAppBrowserNavigationController.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		6043E2C96D8C4A2A9246A3AF /* CDVWKInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVWKInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		60630D7CE0D3454FA9DBAA13 /* CDVWKInAppBrowserUIDelegate.m */ = {isa = PBXFileReference; name = "CDVWKInAppBrowserUIDelegate.m"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		EF2AD8EFF0A44DD1AD4457A1 /* CDVInAppBrowserOptions.h */ = {isa = PBXFileReference; name = "CDVInAppBrowserOptions.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9249A2594EA647658881F671 /* CDVInAppBrowserNavigationController.h */ = {isa = PBXFileReference; name = "CDVInAppBrowserNavigationController.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7D4823309E8B42F0B9AFDD26 /* CDVWKInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVWKInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		C92F12A1CEBB49E6B34BD5F5 /* CDVWKInAppBrowserUIDelegate.h */ = {isa = PBXFileReference; name = "CDVWKInAppBrowserUIDelegate.h"; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,14 +185,14 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				E15C00D67BEA4F4A80A537DF /* CDVInAppBrowserOptions.m */,
-				73E5759D92274D03BAFB21BF /* CDVInAppBrowserNavigationController.m */,
-				C65BD5B9374F4831B4331B73 /* CDVWKInAppBrowser.m */,
-				D159D3F0947E4B138C92C50E /* CDVWKInAppBrowserUIDelegate.m */,
-				404EEBD1302645058835B704 /* CDVInAppBrowserOptions.h */,
-				7D040AAB7E0F4915B38DAC3A /* CDVInAppBrowserNavigationController.h */,
-				D335DE0E202E40D8B83748E4 /* CDVWKInAppBrowser.h */,
-				4320894849084870951CFE24 /* CDVWKInAppBrowserUIDelegate.h */,
+				C0185B1438EB40DAB135FBCD /* CDVInAppBrowserOptions.m */,
+				B88C86A7CC58417D9285276F /* CDVInAppBrowserNavigationController.m */,
+				6043E2C96D8C4A2A9246A3AF /* CDVWKInAppBrowser.m */,
+				60630D7CE0D3454FA9DBAA13 /* CDVWKInAppBrowserUIDelegate.m */,
+				EF2AD8EFF0A44DD1AD4457A1 /* CDVInAppBrowserOptions.h */,
+				9249A2594EA647658881F671 /* CDVInAppBrowserNavigationController.h */,
+				7D4823309E8B42F0B9AFDD26 /* CDVWKInAppBrowser.h */,
+				C92F12A1CEBB49E6B34BD5F5 /* CDVWKInAppBrowserUIDelegate.h */,
 			);
 			name = Plugins;
 			path = "SideQuest/Plugins";
@@ -304,10 +304,10 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				5E762EC6D39B45808B98ED4A /* CDVInAppBrowserOptions.m in Sources */,
-				ACE4D75FB9014136BB90B4C2 /* CDVInAppBrowserNavigationController.m in Sources */,
-				E4320A01AFBE4D14BEB4836D /* CDVWKInAppBrowser.m in Sources */,
-				11891F2078284B6C92D3AB30 /* CDVWKInAppBrowserUIDelegate.m in Sources */,
+				B8549E6C48D14C1A88487F83 /* CDVInAppBrowserOptions.m in Sources */,
+				7E52A1EDC53D4996800B9450 /* CDVInAppBrowserNavigationController.m in Sources */,
+				AB2F67A0CB9E492181F93FFA /* CDVWKInAppBrowser.m in Sources */,
+				0E008A1FE69C4CB0BE72BEF8 /* CDVWKInAppBrowserUIDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

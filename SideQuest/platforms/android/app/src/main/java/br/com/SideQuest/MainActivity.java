@@ -17,7 +17,7 @@
        under the License.
  */
 
-package br.com.sidequest;
+package br.com.SideQuest;
 
 import android.os.Bundle;
 
